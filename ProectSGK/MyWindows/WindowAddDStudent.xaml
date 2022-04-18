@@ -1,0 +1,34 @@
+﻿<Window x:Class="ProectSGK.MyWindows.WindowAddDStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProectSGK.MyWindows"
+        mc:Ignorable="d"
+        Title="Добавить нового студента / Удаление студента " Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label>Выберите группы:</Label>
+            <ComboBox Name="cbGroups" Margin="5"></ComboBox>
+
+            <Label>Выберите Имя Студента:</Label>
+            <TextBox x:Name="tbName" Margin="10" ></TextBox>
+            <Button x:Name="btAddStudent" Margin="10" Padding="10" 
+                    Click="btAddStudent_Click" 
+                    
+                    >Добавить нового студента </Button>
+
+            <Label >_____________________________</Label>
+            <Label>Удаление  студента</Label>
+
+            <Label>Введите ид студента </Label>
+            <TextBox x:Name="tbIdStudent" Margin="10" >
+            </TextBox>
+
+            <Button x:Name="btDellStudent" Margin="10" Padding="10" 
+                    Click="btDellStudent_Click"
+                    >Удалить студента</Button>
+
+        </StackPanel>
+    </Grid>
+</Window>
